@@ -14,10 +14,6 @@ End If
 
 On Error Resume Next
 Set WshShell = CreateObject("WScript.Shell")
-WshShell.RegWrite "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\DisableAntiSpyware",1,"REG_DWORD"
-WshShell.RegWrite "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Real-Time Protection\DisableBehaviorMonitoring","1","REG_DWORD"
-WshShell.RegWrite "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Real-Time Protection\DisableOnAccessProtection","1","REG_DWORD"
-WshShell.RegWrite "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Real-Time Protection\DisableScanOnRealtimeEnable","1","REG_DWORD"
 
 WScript.Sleep 100
 
